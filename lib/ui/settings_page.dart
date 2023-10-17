@@ -6,7 +6,7 @@ import 'package:news_app/widgets/platform_widget.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return PlatformWidget(androidBuilder: _buildAndorid, iosBuilder: _buildIos);
