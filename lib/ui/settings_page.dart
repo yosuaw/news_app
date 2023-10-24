@@ -9,6 +9,8 @@ import 'package:news_app/widgets/platform_widget.dart';
 import 'package:provider/provider.dart';
 
 class SettingsPage extends StatelessWidget {
+  static const String settingsTitle = 'Setting';
+
   const SettingsPage({super.key});
 
   @override
