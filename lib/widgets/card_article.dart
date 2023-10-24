@@ -6,13 +6,12 @@ import 'package:news_app/ui/article_detail_page.dart';
 
 class CardArticle extends StatelessWidget {
   final Article article;
- 
+
   const CardArticle({super.key, required this.article});
- 
+
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: primaryColor,
       child: ListTile(
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),

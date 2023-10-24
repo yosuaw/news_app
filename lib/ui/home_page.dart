@@ -35,14 +35,9 @@ class _HomePageState extends State<HomePage> {
     ),
   ];
   final List<Widget> _listWidget = [
-    ChangeNotifierProvider<NewsProvider>(
-      create: (_) => NewsProvider(apiService: ApiService()),
-      child: const ArticleListPage(),
-    ),
-    ChangeNotifierProvider<SchedulingProvider>(
-      create: (_) => SchedulingProvider(),
-      child: const SettingsPage(),
-    ),
+    const ArticleListPage(),
+    // const BookmarksPage(),
+    const SettingsPage(),
   ];
 
   @override
