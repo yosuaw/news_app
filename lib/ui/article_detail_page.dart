@@ -1,3 +1,4 @@
+import 'package:news_app/common/navigation.dart';
 import 'package:news_app/data/model/article.dart';
 import 'package:news_app/ui/article_web_view.dart';
 import 'package:flutter/material.dart';
@@ -51,8 +52,8 @@ class ArticleDetailPage extends StatelessWidget {
                   ElevatedButton(
                     child: const Text('Read more'),
                     onPressed: () {
-                      Navigator.pushNamed(context, ArticleWebView.routeName,
-                          arguments: article.url);
+                      Navigation.intentWithData(
+                          ArticleWebView.routeName, article.url);
                     },
                   ),
                 ],
